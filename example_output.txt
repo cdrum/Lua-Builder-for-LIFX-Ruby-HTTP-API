@@ -1,0 +1,13 @@
+local http = require('socket.http')
+http.TIMEOUT = 20
+
+http.request{url='http://192.168.1.221:56780/lights/d073d5005654/on', method='PUT', headers = {['Content-Length'] = string.len(''),['Content-Type'] = 'application/x-www-form-urlencoded'}}
+http.request{url='http://192.168.1.221:56780/lights/d073d5005654/color?hue=0&saturation=0&brightness=0.35138475623713&kelvin=2500', method='PUT', headers = {['Content-Length'] = string.len(''),['Content-Type'] = 'application/x-www-form-urlencoded'}}
+http.request{url='http://192.168.1.221:56780/lights/d073d500114b/on', method='PUT', headers = {['Content-Length'] = string.len(''),['Content-Type'] = 'application/x-www-form-urlencoded'}}
+http.request{url='http://192.168.1.221:56780/lights/d073d500114b/color?hue=0&saturation=0&brightness=0.28865491721981&kelvin=2500', method='PUT', headers = {['Content-Length'] = string.len(''),['Content-Type'] = 'application/x-www-form-urlencoded'}}
+http.request{url='http://192.168.1.221:56780/lights/d073d5008af8/on', method='PUT', headers = {['Content-Length'] = string.len(''),['Content-Type'] = 'application/x-www-form-urlencoded'}}
+http.request{url='http://192.168.1.221:56780/lights/d073d5008af8/color?hue=0&saturation=0&brightness=0.07510490577554&kelvin=2500', method='PUT', headers = {['Content-Length'] = string.len(''),['Content-Type'] = 'application/x-www-form-urlencoded'}}
+http.request{url='http://192.168.1.221:56780/lights/d073d5003e99/on', method='PUT', headers = {['Content-Length'] = string.len(''),['Content-Type'] = 'application/x-www-form-urlencoded'}}
+http.request{url='http://192.168.1.221:56780/lights/d073d5003e99/color?hue=0&saturation=0&brightness=0.10588235294118&kelvin=4000', method='PUT', headers = {['Content-Length'] = string.len(''),['Content-Type'] = 'application/x-www-form-urlencoded'}}
+
+return true
